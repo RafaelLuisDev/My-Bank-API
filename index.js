@@ -3,12 +3,11 @@ import accountsRouter from './routes/accounts.js';
 import winston from 'winston';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 const app = express();
-const port = 3000;
-const dbUser = 'dbAdmin';
-const dbPassword = 'dbAdmin';
-const dbName = 'Bank-api';
+
+dotenv.config();
 
 const { combine, timestamp, label, printf } = winston.format;
 const myFormat = printf(({ level, message, label, timestamp }) => {
@@ -26,13 +25,13 @@ global.logger = winston.createLogger({
 (async () => {
     try {
         await mongoose
-            .connect(`mongodb+srv://${dbUser}:${dbPassword}@bootcampigti.wmrra.gcp.mongodb.net/${dbName}?retryWrites=true&w=majority`, {
+            .connect(`mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@bootcampigti.wmrra.gcp.mongodb.net/Bank-api?retryWrites=true&w=majority`, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
                 useFindAndModify: false,
             })
             .then(() => {
-                logger.info(`Conectado ao MongoDB! DB: ${dbName}`);
+                logger.info(`Conectado ao MongoDB! DB: Bank-api`);
             });
     } catch (error) {
         logger.error('Erro ao conectar no MongoDB', error);
@@ -42,6 +41,6 @@ global.logger = winston.createLogger({
 app.use(express.json());
 app.use('/accounts', accountsRouter);
 app.use(cors());
-app.listen(port, async () => {
+app.listen(process.env.PORT, async () => {
     logger.info('API Started');
 });

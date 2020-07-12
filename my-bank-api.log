@@ -259,3 +259,93 @@
 [my-bank-api] 2020-07-12T05:40:12.713Z 
     INFO: 
         Conectado ao MongoDB! DB: Bank-api
+[my-bank-api] 2020-07-12T20:12:40.970Z 
+    INFO: 
+        API Started
+[my-bank-api] 2020-07-12T20:13:12.001Z 
+    ERROR: 
+        Erro ao conectar no MongoDB Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+[my-bank-api] 2020-07-12T20:16:40.346Z 
+    INFO: 
+        API Started
+[my-bank-api] 2020-07-12T20:16:41.333Z 
+    INFO: 
+        Conectado ao MongoDB! DB: Bank-api
+[my-bank-api] 2020-07-12T20:17:37.442Z 
+    INFO: 
+        API Started
+[my-bank-api] 2020-07-12T20:17:38.029Z 
+    INFO: 
+        Conectado ao MongoDB! DB: Bank-api
+[my-bank-api] 2020-07-12T20:18:05.857Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
+[my-bank-api] 2020-07-12T20:18:06.020Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/swagger-ui.css
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
+[my-bank-api] 2020-07-12T20:18:06.046Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/swagger-ui-bundle.js
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
+[my-bank-api] 2020-07-12T20:18:06.091Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/swagger-ui-standalone-preset.js
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
+[my-bank-api] 2020-07-12T20:18:06.118Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/swagger-ui-init.js
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
+[my-bank-api] 2020-07-12T20:18:07.634Z 
+    INFO: 
+        
+    Request: GET /accounts/doc/
+    Host: localhost:3000
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+    IP: ::1
+    Content-Type: undefined
+    Body: {}
+    Params: {}
+    Query: {}
+    
