@@ -12,8 +12,8 @@ dotenv.config();
 const { combine, timestamp, label, printf } = winston.format;
 const myFormat = printf(({ level, message, label, timestamp }) => {
     return `[${label}] ${timestamp} 
-    ${level.toUpperCase()}: 
-        ${message}`;
+    ${level.toUpperCase()}:
+    ${message}`;
 });
 
 global.logger = winston.createLogger({
@@ -25,7 +25,7 @@ global.logger = winston.createLogger({
 (async () => {
     try {
         await mongoose
-            .connect(`mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@bootcampigti.wmrra.gcp.mongodb.net/Bank-api?retryWrites=true&w=majority`, {
+            .connect(`mongodb+srv://${process.env.USERDB}:${process.env.PWDDB}@cluster0.wmrra.gcp.mongodb.net/Bank-api?retryWrites=true&w=majority`, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
                 useFindAndModify: false,
